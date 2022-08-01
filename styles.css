@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+:root{
+    --color0: #0f0f0f;
+    --color1: #ffffff;
+    --color2: #083b66;
+    --color3: #8a25b1;
+    --fs-small0: 0.7rem;
+    --fs-small1: 0.8rem;
+    --fs-small2: 0.9rem;
+    --fs-medium0: 1rem;
+    --fs-medium1: 1.2rem;
+    --fs-medium2: 1.4rem;
+    --fs-large0: 1.6rem;
+    --fs-large1: 1.8rem;
+    --fs-large2: 2rem;
+    --fw-light0: 300;
+    --fw-light1: 400;
+    --fw-normal0: 500;
+    --fw-normal1: 600;
+    --fw-bold0: 700;
+    --fw-bold1: 800; 
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--color1);
+}
+
+a{
+    text-decoration: none;
+}
+
+/*#####################################*/
+/*Modules*/
+
+
+/* End Modules */
+/*#####################################*/
+
+
+/* Self Styles */
+
+.main-header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap:20px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 3px 1px var(--color0);
+}
+
+.main-header-logo-container{
+    width: 150px;
+    height: 90px;
+    background-image: url("./img/logo-racademy.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.main-header-nav ul li{
+    list-style: none;
+}
+
+.main-header-nav ul li a{
+    color: var(--color2);
+    font-size: var(--fs-medium0);
+    font-weight: var(--fw-bold0);
+}
+
+.main-header-nav ul li a:hover{
+    color:var(--color3);
+}
+
+
