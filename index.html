@@ -5,44 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Racademy</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
+
+    <!-- Main Header -->
     <header class="main-header">
         <div class="main-header-logo-container"></div>
         <nav clasS="main-header-nav">
-            <ul>
+            <label class="bars-label" for="check"><i class="fas fa-bars"></i></label>
+            <input class="burguer-main-header-check" type="checkbox" id="check"/>
+            <ul class="nav-links">
                 <li>
-                    <a href="#inicio">Inicio</a>
+                    <a href="#hero">Inicio</a>
                 </li>
-            </ul>
-            <ul>
+                <li>
+                    <a href="#opinions">Opiniones</a>
+                </li>
                 <li>
                     <a href="#about-me">Sobre mi</a>
                 </li>
-            </ul>
-            <ul>
                 <li>
                     <a href="#my-courses">Mis cursos</a>
                 </li>
-            </ul>
-            <ul>
                 <li>
                     <a href="#contact">Contacto</a>
                 </li>
-            </ul>
-            <ul>
                 <li>
-                    <a href="#sign-in">Iniciar Sesión</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#sign-up">Registrarme</a>
+                    <a href="#sign-in">Ingresar</a>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <!-- Hero -->
+    <section class="hero section-style1" id="hero">
+        <div class="hero-welcome-container">
+            <h1>Racademy</h1>
+            <p>El mejor sitio web para aprender a tocar tu guitarra. Aprende los estilos rock, blues, pop y funk desde la comodidad de tu casa.</p>
+            <div class="btn-container">
+                <a href="#my-courses" class="btn-style1">Mis cursos</a>
+                <a href="#about-me" class="btn-style2">Sobre mi</a>
+            </div>
+        </div>
+        <div class="hero-photo"></div>
+    </section>
+    <section class="opinions section-style2" id="opinions">
+        <div>
+            <h2 class="h2-style2">Opiniones de la comunidad</h2>
+        </div>
+        <div class="cards-opinion-container">
+            <!-- Juan Perez-->
+            <div class="card-opinion">
+                <div class="img-opinion" id="op-juan-perez"></div>
+                <div class="card-opinion-text"> 
+                    <h4 class="h4-style1">Juan Pérez</h4>
+                    <p class="stars">★★★★★</p>
+                    <div class="text-opinion-container">
+                        <p>"Excelente plataforma para aprender guitarra eléctrica. El material es muy didáctico y práctico. Llevo 2 meses estudiando en Racademy y ya me integré a mi primer banda de rock... <span>😀</span>"</p>
+                    </div>
+                    <a href="#">Ver mas</a>
+                </div>
+            </div>
+            <!-- Sabrina Gomez -->
+            <div class="card-opinion">
+                <div class="img-opinion" id="op-sabrina-gomez"></div>
+                <div class="card-opinion-text"> 
+                    <h4 class="h4-style1">Sabrina Gomez</h4>
+                    <p class="stars">★★★★★</p>
+                    <div class="text-opinion-container">
+                        <p>"Muy buen material! Me ha ayudado muchisimo a entender las escalas básicas. Estan muy bien organizados los cursos desde inicial hasta avanzado. Un 10!!! <span>💪</span>"</p>
+                    </div>
+                    <a href="#">Ver mas</a>
+                </div>
+            </div>
+            <!-- Leonardo Rios -->
+            <div class="card-opinion">
+                <div class="img-opinion" id="op-leonardo-rios"></div>
+                <div class="card-opinion-text"> 
+                    <h4 class="h4-style1">Leonardo Rios</h4>
+                    <p class="stars">★★★★</p>
+                    <div class="text-opinion-container">
+                        <p>"Los videos estan muy buenos, se escucha muy bien la explicación del profesor. Agregaría que el material se pueda descargar en pdf, es un poco molesto tener que acceder a la página cada vez que se quiere recurrir al material."</p>
+                    </div>
+                    <a href="#">Ver mas</a>
+                </div>
+            </div>
+            <!-- Sasha Fernandez -->
+            <div class="card-opinion">
+                <div class="img-opinion" id="op-sasha-fernandez"></div>
+                <div class="card-opinion-text"> 
+                    <h4 class="h4-style1">Sasha Fernandez</h4>
+                    <p class="stars">★★★★</p>
+                    <div class="text-opinion-container">
+                        <p>"Disfrute mucho aprendiendo en Racademy. Las explicaciones son breves y claras. Me gustaría que en las proximas secciones se incluyan métodos de rasgueo con pua <span>🤘</span>. Le doy un 4/5!"</p>
+                    </div>
+                    <a href="#">Ver mas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
