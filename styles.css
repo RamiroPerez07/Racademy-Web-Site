@@ -419,7 +419,6 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 10px;
     box-shadow: 1px 1px 3px 1px var(--color0);
     filter: brightness(1.05);
 }
@@ -484,6 +483,17 @@ a{
     background-image: url("./img/personal4.jpg");
 }
 
+.img-post{
+    align-self: center;
+    width: 90%;
+    max-width: 400px;
+    height: 300px;
+    background-image: url("./img/npu_inicio.PNG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 3px 1px var(--color0);
+}
 
 
 
@@ -528,7 +538,6 @@ a{
         flex-direction: column;
     }
 
-
     .opinions{
         padding-bottom: 40px;
         padding-top: 40px;
@@ -538,7 +547,48 @@ a{
         grid-template-columns: repeat(2, 1fr);
         gap: 45px;
     }
+
+    #gallery1{
+        width:100%;
+        height: 500px;
+        box-shadow: none;
+        display: grid;
+        grid-template-areas: 'aa aa bb bb dd'
+                             'aa aa bb bb dd'
+                             'aa aa cc cc dd'
+                             'aa aa cc cc dd';
+        gap: 5px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .gallery-photo{
+        border-radius: 10px;
+        width: 200px;
+    }
+
+    .gallery-photo:nth-child(1){
+        grid-area: aa;
+        height: 100%;
+    }
+
+    .gallery-photo:nth-child(2){
+        grid-area: bb;
+        height: 100%;
+    }
+
+    .gallery-photo:nth-child(3){
+        grid-area: cc;
+        height: 100%;
+    }
+
+    .gallery-photo:nth-child(4){
+        grid-area: dd;
+        height: 100%;
+    }
 }
+
+
 
 @media (max-width: 940px){
 
@@ -564,7 +614,7 @@ a{
         width: 45%;
         height: 100%;
         background-color: var(--color1);
-        opacity: 0.9;
+        opacity: 0.96;
         transition: all 0.5s;
     }
     
@@ -574,27 +624,47 @@ a{
     }
 
     .gallery-photo{
-        width: 250px;
-        height:300px;
+        width: 160px;
     }
 
 
 }
 
+@media(max-width:768px){
+    .gallery-photo{
+        width: 120px;
+    }
+}
+
 
 @media (max-width: 530px){
+    *{
+        font-size: 14px;
+    }
+
+    .main-header-nav ul{
+        padding-left: 30px;
+    }
+
     .cards-opinion-container{
         grid-template-columns: 1fr;
     }
 
-    .gallery-photo{
-        width: 200px;
-        height: 300px;
+    #gallery1{
+        grid-template-rows: repeat(2,1fr);
     }
 
 }
 
 @media (max-width: 320px){
+
+    *{
+        font-size: 12px;
+    }
+
+    .main-header-nav ul{
+        padding-left: 20px;
+    }
 
     .gallery-photo{
         width: 150px;
