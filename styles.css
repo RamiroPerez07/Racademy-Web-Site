@@ -85,10 +85,28 @@ a{
     padding: 25px;
 }
 
+.section-style3{
+    background: linear-gradient(to right, var(--color0), var(--color3));
+    height: auto;
+    min-height: calc(100vh - 90px);
+    width: 100%;
+    box-shadow: 0px 0px 3px 1px var(--color0);
+    padding: 25px;
+}
+
+
+
 .h2-style2{
     color:var(--color1);
     font-weight: var(--fw-bold0);
     text-align: center;
+}
+
+.h3-style1{
+    font-weight: var(--fs-medium2);
+    text-align: left;
+    color: var(--color3);
+    filter: brightness(200%);
 }
 
 .h4-style1{
@@ -96,6 +114,18 @@ a{
     font-weight: var(--fw-bold1);
     text-align: center;
 }
+
+.art-frame-style1{
+    background-color: var(--color4);
+    padding: 20px;
+}
+
+.p-art-white{
+    color: var(--color1);
+    font-weight: var(--fw-light1);
+    text-align: left;
+}
+
 
 
 
@@ -343,6 +373,55 @@ a{
     color: var(--color3);
     font-weight: var(--fw-light1);
 }
+
+
+
+
+
+
+
+/*####################################*/
+/* ABOUT ME FORM */
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-me div h2{
+    font-size: var(--fs-large0);
+}
+
+#presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:15px;
+}
+
+#presentation h3{
+    font-size: var(--fs-medium2);
+}
+
+#musical-trajectory{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:15px;
+}
+
+#musical-trajectory h3{
+    font-size: var(--fs-medium2);
+}
+
+
+/*#################################### */
+
+
 
 
 
