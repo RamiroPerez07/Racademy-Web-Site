@@ -118,6 +118,8 @@ a{
 .art-frame-style1{
     background-color: var(--color4);
     padding: 20px;
+    width:95%;
+    margin:auto;
 }
 
 .p-art-white{
@@ -396,10 +398,30 @@ a{
 
 #presentation{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+#presentation-text{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap:15px;
+    width: 60%;
+}
+
+#img-presentation{
+    width: 40%;
+    height: 400px;
+    background-image: url("./img/presentation-pick.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 1px var(--color0);
+    filter: brightness(1.05);
 }
 
 #presentation h3{
@@ -417,6 +439,52 @@ a{
 #musical-trajectory h3{
     font-size: var(--fs-medium2);
 }
+
+#gallery1{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 3px 3px var(--color0) ;
+}
+
+.gallery-photo{
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex:1;
+    transition: flex 0.5s;
+    cursor:pointer;
+}
+
+.gallery-photo:hover{
+    flex:2;
+    background-position: 50% 25%;
+}
+
+.gallery-photo:nth-child(1){
+    background-image: url("./img/personal.jpg");
+}
+
+.gallery-photo:nth-child(2){
+    background-image: url("./img/personal2.jpg");
+}
+
+.gallery-photo:nth-child(3){
+    background-image: url("./img/personal3.jpg");
+}
+
+.gallery-photo:nth-child(4){
+    background-image: url("./img/personal4.jpg");
+}
+
+
 
 
 /*#################################### */
@@ -440,6 +508,26 @@ a{
     .hero-welcome-container{
         margin-top: 40px;
     }
+
+    #presentation{
+        flex-direction: column;
+    }
+
+    #presentation-text{
+        width: 100%;
+    }
+
+    #img-presentation{
+        width:100%;
+        max-width: 500px;
+    }
+
+    #gallery1{
+        width: auto;
+        height: 1000px;
+        flex-direction: column;
+    }
+
 
     .opinions{
         padding-bottom: 40px;
@@ -485,6 +573,11 @@ a{
         transition: all 0.5s;
     }
 
+    .gallery-photo{
+        width: 250px;
+        height:300px;
+    }
+
 
 }
 
@@ -493,4 +586,20 @@ a{
     .cards-opinion-container{
         grid-template-columns: 1fr;
     }
+
+    .gallery-photo{
+        width: 200px;
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 320px){
+
+    .gallery-photo{
+        width: 150px;
+        height: 200px;
+    }
+
+
 }
