@@ -539,7 +539,7 @@ a{
 
     .cards-opinion-container{
         grid-template-columns: repeat(2, 1fr);
-        gap: 45px;
+        gap: 60px 10px;
     }
 
     #gallery1{
