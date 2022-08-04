@@ -115,17 +115,12 @@ a{
     text-align: center;
 }
 
-.art-frame-style1{
-    background-color: var(--color4);
-    padding: 20px;
-    width:95%;
-    margin:auto;
-}
+
 
 .p-art-white{
     color: var(--color1);
     font-weight: var(--fw-light1);
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -401,30 +396,51 @@ a{
     justify-content: center;
     align-items: center;
     gap:15px;
+    width:100%;
 }
 
 #presentation-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    gap:15px;
-    width: 60%;
+    align-items: center;
+    gap:25px;
+    width: 50%;
 }
 
 #img-presentation{
-    width: 40%;
-    height: 400px;
+    width: 30%;
+    height: 350px;
     background-image: url("./img/presentation-pick.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 1px 1px 3px 1px var(--color0);
+    box-shadow: 0px 0px 3px 1px var(--color0);
     filter: brightness(1.05);
 }
 
 #presentation h3{
     font-size: var(--fs-medium2);
+}
+
+.statistics-container{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.statistics-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: var(--color2);
+    color:var(--color1);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 2px var(--color0);
 }
 
 #musical-trajectory{
@@ -433,6 +449,7 @@ a{
     justify-content: center;
     align-items: flex-start;
     gap:15px;
+    width: 100%;
 }
 
 #musical-trajectory h3{
@@ -448,7 +465,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 3px 3px var(--color0) ;
+    box-shadow: 0px 0px 3px 1px var(--color0);
 }
 
 .gallery-photo{
@@ -525,6 +542,7 @@ a{
 
     #presentation-text{
         width: 100%;
+        align-items: center;
     }
 
     #img-presentation{
@@ -549,11 +567,13 @@ a{
         grid-template-columns: repeat(6,1fr);
         grid-template-rows: repeat(4,1fr);
         gap: 5px;
+        box-shadow: none;
     }
 
     .gallery-photo{
         width:100%;
         height: 100%;
+        box-shadow: 0px 0px 3px 1px var(--color0);
     }
 
 
@@ -635,6 +655,10 @@ a{
         grid-template-columns: 1fr;
     }
 
+    .statistics-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     #gallery1{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,1fr);
@@ -672,6 +696,9 @@ a{
         padding-left: 20px;
     }
 
+    .statistics-container{
+        grid-template-columns: 1fr;
+    }
 
 
 
