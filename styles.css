@@ -49,6 +49,16 @@ a{
     text-decoration: none;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; 
+    width: 100%;
+    height: auto;
+    margin-top: 90px;
+}
+
 /*#####################################*/
 /*Modules*/
 
@@ -71,9 +81,9 @@ a{
 
 .section-style1{
     height: auto;
-    min-height: 100vh;
+    min-height: calc(100vh - 90px);
     width: 100%;
-    padding: 90px 25px 0px 25px;
+    padding: 25px;
 }
 
 .section-style2{
@@ -455,13 +465,14 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap:15px;
     width: 100%;
 }
 
-#musical-trajectory h3{
-    font-size: var(--fs-medium2);
+#musical-trajectory p{
+    text-align: center;
+    font-size: var(--fs-medium0);
 }
 
 #gallery1{
