@@ -584,7 +584,7 @@ main{
 }
 
 .course-card{
-    width: 70%;
+    width: min(70% , 275px);
     height:auto;
     min-height: 375px;
     background: linear-gradient(45grad, var(--color3),var(--color2));
