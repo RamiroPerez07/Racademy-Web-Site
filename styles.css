@@ -749,15 +749,29 @@ textarea::placeholder{
 }
 
 
+/*#################################### */
 
+#main-footer{
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to right, var(--color3),var(--color2));
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+#main-footer p{
+    color: var(--color1);
+    font-size: var(--fs-small2);
+    font-weight: var(--fw-light1);
+    text-align: center;
+}
 
 
 
 /*#################################### */
-
-
-
-
 
 /* Media Queries */
 
