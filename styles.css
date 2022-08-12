@@ -781,7 +781,7 @@ textarea::placeholder{
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    background: linear-gradient(to right, var(--color2), var(--color3));
+    background: linear-gradient(to right, var(--color3), var(--color2));
     padding: 15px 20px;
 }
 
@@ -831,7 +831,7 @@ textarea::placeholder{
 }
 
 .btn-back{
-    justify-self: start;
+    justify-self: end;
 }
 
 
