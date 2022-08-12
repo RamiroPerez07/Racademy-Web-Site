@@ -13,10 +13,15 @@
 </head>
 <body>
     <main class="dark-main-style">
+        <a href="./index.html" class="btn-style1 btn-back">Regresar</a>
         <form action="./index.html" class="frame-form-style1">
             <div class="form-logo"></div>
             <p class="h2-style-dark">Iniciar Sesión</p>
-            <input type="text" placeholder="Usuario">
+            <input type="text" id="user-name" name="user-name" placeholder="Usuario" required>
+            <input type="password" id="user-pass" name="user-pass" placeholder="Contraseña" required>
+            <button class="btn-style1">Ingresar</button>
+            <a href="#" class="links">Olvide mi contraseña</a>
+            <p>¿No estas registrado? <a href="#" id="register-btn">Registrate</a></p>
         </form>
 
     </main>

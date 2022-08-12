@@ -776,11 +776,13 @@ textarea::placeholder{
 .dark-main-style{
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    justify-items: center;
     align-items: center;
-    justify-content: center;
     background: linear-gradient(to right, var(--color2), var(--color3));
+    padding: 15px 20px;
 }
 
 .frame-form-style1{
@@ -791,17 +793,18 @@ textarea::placeholder{
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 10px;
     background-color: var(--color1);
     border-radius: 15px;
     box-shadow: 1px 1px 1px 1px var(--color0);
-    padding: 10px;
+    padding: 20px 5%;
+    align-self: start;
 }
 
 .form-logo{
     background-image: url("./img/logo.png");
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -809,7 +812,27 @@ textarea::placeholder{
 
 
 
+.links{
+    font-size: var(--fs-small1);
+    font-weight: var(--fw-light1);
+    color: var(--color2);
+}
 
+#register-btn{
+    color: var(--color2);
+    font-size: var(--fs-medium0);
+    font-weight: var(--fw-bold0);
+    transition: all 0.5s;
+}
+
+#register-btn:hover{
+    color: var(--color3);
+    transition: all 0.5s;
+}
+
+.btn-back{
+    justify-self: start;
+}
 
 
 
