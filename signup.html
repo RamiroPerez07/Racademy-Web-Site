@@ -16,12 +16,30 @@
         <a href="./index.html" class="btn-style1 btn-back">Regresar</a>
         <form action="./index.html" class="frame-form-style1">
             <div class="form-logo"></div>
-            <p class="h2-style-dark">Iniciar Sesión</p>
-            <input type="text" id="user-name" name="user-name" placeholder="Usuario" required>
-            <input type="password" id="user-pass" name="user-pass" placeholder="Contraseña" required>
-            <button class="btn-style1">Ingresar</button>
-            <a href="#" class="links">Olvide mi contraseña</a>
-            <p>¿No estas registrado? <a href="#" id="register-btn">Registrate</a></p>
+            <p class="h2-style-dark">Registro</p>
+            <input class="input-style-1" type="text" id="user-nickname-register" name="user-nickname-register" placeholder="Nombre de usuario" required>
+            <input class="input-style-1" type="text" id="user-name-register" name="user-pass-register" placeholder="Nombre" required>
+            <input class="input-style-1" type="text" id="user-surname-register" name="user-surname-register" placeholder="Apellido" required>
+            <input class="input-style-1" type="tel" id="user-tel-register" name="user-surname-register" placeholder="Teléfono" required>
+            <input class="input-style-1" type="email" id="user-mail-register" name="user-pass-register" placeholder="Mail" required>
+            <input class="input-style-1" type="password" id="user-pass-register" name="user-pass-register" placeholder="Contraseña" required>
+            <input class="input-style-1" type="password" id="user-pass2-register" name="user-pass-register" placeholder="Repita la contraseña" required>
+            <div class="radio-container">
+                <p>Seleccione el paquete:</p>
+                <div class="radio-set">
+                    <input type="radio" name="curso" id="pq-classic">
+                    <label for="pq-classic">Clásico</label>
+                </div>
+                <div class="radio-set">
+                    <input type="radio" name="curso" id="pq-plus">
+                    <label for="pq-plus">Plus</label>
+                </div>
+                <div class="radio-set">
+                    <input type="radio" name="curso" id="pq-premium">
+                    <label for="pq-premium">Premium</label>
+                </div>
+            </div>
+            <button class="btn-style1">Aceptar</button>
         </form>
 
     </main>
