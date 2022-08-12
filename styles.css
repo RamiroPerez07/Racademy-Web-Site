@@ -662,7 +662,7 @@ a{
 }
 
 input{
-    width: 70%;
+    width: 100%;
     height: 32px;
     padding: 6px;
     color: var(--color2);
@@ -997,9 +997,6 @@ textarea::placeholder{
         grid-row: 2/3;
     }
 
-    input{
-        width: 100%;
-    }
 
 
 }
