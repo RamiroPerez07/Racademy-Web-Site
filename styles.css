@@ -14,6 +14,7 @@
     --color2: #083b66;
     --color3: #8a25b1;
     --color4: rgba(15, 15, 15, 0.65);
+    --color5: #be4deb;
     --fs-small0: 0.7rem;
     --fs-small1: 0.8rem;
     --fs-small2: 0.9rem;
@@ -29,7 +30,6 @@
     --fw-normal1: 600;
     --fw-bold0: 700;
     --fw-bold1: 800; 
-
 }
 
 html{
@@ -49,18 +49,9 @@ a{
     text-decoration: none;
 }
 
-.light-main-style{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center; 
-    width: 100%;
-    height: auto;
-    margin-top: 90px;
-}
 
-/*#####################################*/
-/*Modules*/
+/* ########################### */
+/* Buttons */
 
 .btn-style1{
     padding: 10px;
@@ -74,6 +65,11 @@ a{
     text-align: center;
 }
 
+.btn-style1:hover{
+    transition: all 0.5s;
+    background-color: var(--color5);
+}
+
 .btn-style2{
     padding: 10px;
     background-color: var(--color2);
@@ -83,14 +79,22 @@ a{
     font-weight: var(--fw-bold0);
 }
 
-.btn-style3{
-    padding: 10px;
-    background-color: var(--color1);
-    color: var(--color1);
-    border-radius: 10px;
-    font-weight: var(--fw-bold0);
-}
+/* ########################### */
 
+
+
+/* ########################### */
+/* Frames */
+
+.light-main-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; 
+    width: 100%;
+    height: auto;
+    margin-top: 90px;
+}
 
 .section-style1{
     height: auto;
@@ -115,6 +119,12 @@ a{
     width: 100%;
     padding: 25px;
 }
+
+/* ########################### */
+
+
+/* ########################### */
+/* Titles */
 
 .h2-style-dark{
     color: var(--color3);
@@ -149,6 +159,13 @@ a{
     text-align: center;
 }
 
+/* ########################### */ 
+
+
+
+/* ########################### */ 
+/* Text */
+
 .txt-style-dark1{
     color: var(--color0);
     font-weight: var(--fw-light1);
@@ -166,17 +183,13 @@ a{
     text-align: center;
 }
 
-
-
-
-
-/* End Modules */
 /*#####################################*/
 
 
 /* Self Styles */
 
 
+/*#####################################*/
 /* HEADER */
 .main-header{
     width: 100%;
@@ -452,9 +465,9 @@ a{
 }
 
 #img-presentation{
-    width: 30%;
+    width: 25%;
     height: 350px;
-    background-image: url("./img/presentation-pick.jpg");
+    background-image: url("./img/personal4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -517,7 +530,7 @@ a{
     height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 60% 50%;
     flex:1;
     transition: flex 0.5s;
     cursor:pointer;
@@ -529,19 +542,19 @@ a{
 }
 
 .gallery-photo:nth-child(1){
-    background-image: url("./img/personal.jpg");
+    background-image: url("./img/gallery11.jpg");
 }
 
 .gallery-photo:nth-child(2){
-    background-image: url("./img/personal2.jpg");
+    background-image: url("./img/gallery12.jpg");
 }
 
 .gallery-photo:nth-child(3){
-    background-image: url("./img/personal3.jpg");
+    background-image: url("./img/gallery13.jpg");
 }
 
 .gallery-photo:nth-child(4){
-    background-image: url("./img/personal4.jpg");
+    background-image: url("./img/gallery14.jpg");
 }
 
 .img-post{
@@ -793,7 +806,23 @@ textarea::placeholder{
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 20px;
+    background-color: var(--color1);
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px var(--color0);
+    padding: 20px 5%;
+    align-self: start;
+}
+
+.frame-form-style2{
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    min-height: 500px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     background-color: var(--color1);
     border-radius: 15px;
     box-shadow: 1px 1px 1px 1px var(--color0);
@@ -858,6 +887,7 @@ textarea::placeholder{
 
 .radio-set label{
     justify-self: start;
+    cursor: pointer;
 }
 
 .radio-set input::after{
