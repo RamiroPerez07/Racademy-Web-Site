@@ -14,35 +14,60 @@
 <body>
     <main class="dark-main-style">
         <a href="./index.html" class="btn-style1 btn-back">Regresar</a>
-        <form action="./index.html" class="frame-form-style1">
-            <div class="form-logo"></div>
-            <p class="h2-style-dark">Registro</p>
-            <input class="input-style-1" type="text" id="user-nickname-register" name="user-nickname-register" placeholder="Nombre de usuario" required>
-            <input class="input-style-1" type="text" id="user-name-register" name="user-name-register" placeholder="Nombre" required>
-            <input class="input-style-1" type="text" id="user-surname-register" name="user-surname-register" placeholder="Apellido" required>
-            <input class="input-style-1" type="tel" id="user-tel-register" name="user-tel-register" placeholder="Teléfono" required>
-            <input class="input-style-1" type="email" id="user-mail-register" name="user-mail-register" placeholder="Mail" required>
-            <input class="input-style-1" type="text" id="user-town-register" name="user-town-register" placeholder="Ciudad" required>
-            <input class="input-style-1" type="text" id="user-province-register" name="user-province-register" placeholder="Provincia" required>
-            <input class="input-style-1" type="text" id="user-country-register" name="user-country-register" placeholder="Pais" required>
-            <input class="input-style-1" type="password" id="user-pass-register" name="user-pass-register" placeholder="Contraseña" required>
-            <input class="input-style-1" type="password" id="user-pass2-register" name="user-pass2-register" placeholder="Repita la contraseña" required>
-            <div class="radio-container">
-                <p>Seleccione el paquete:</p>
-                <div class="radio-set">
-                    <input type="radio" name="curso" id="pq-classic">
-                    <label for="pq-classic">Clásico</label>
+        <form action="./index.html" class="frame-form-style2">
+            <div class="form-logo" id="form-logo-signup"></div>
+            <h2 class="h2-style-dark" id="form-h2-signup">Registro</h2>
+            <div id="user-data-inputs">
+                <input class="input-style-1" type="text" id="user-nickname-register" name="user-nickname-register" placeholder="Nombre de usuario" required>
+                <input class="input-style-1" type="text" id="user-name-register" name="user-name-register" placeholder="Nombre" required>
+                <input class="input-style-1" type="text" id="user-surname-register" name="user-surname-register" placeholder="Apellido" required>
+                <input class="input-style-1" type="tel" pattern="[0-9-]{6,12}" id="user-tel-register" name="user-tel-register" placeholder="Teléfono" required>
+                <input class="input-style-1" type="email" id="user-mail-register" name="user-mail-register" placeholder="Mail" required>
+                <input class="input-style-1" type="text" id="user-town-register" name="user-town-register" placeholder="Ciudad" required>
+                <input class="input-style-1" type="text" id="user-province-register" name="user-province-register" placeholder="Provincia" required>
+                <input class="input-style-1" type="text" id="user-country-register" name="user-country-register" placeholder="Pais" required>
+                <input class="input-style-1" type="password" id="user-pass-register" name="user-pass-register" placeholder="Contraseña" required>
+                <input class="input-style-1" type="password" id="user-pass2-register" name="user-pass2-register" placeholder="Repita la contraseña" required>
+
+            </div>
+            <div id="user-data-payment-method">
+                <div class="radio-container">
+                    <p class="txt-bold">Paquete</p>
+                    <div class="radio-set">
+                        <input type="radio" name="curso" id="pq-classic">
+                        <label for="pq-classic">Clásico</label>
+                    </div>
+                    <div class="radio-set">
+                        <input type="radio" name="curso" id="pq-plus">
+                        <label for="pq-plus">Plus</label>
+                    </div>
+                    <div class="radio-set">
+                        <input type="radio" name="curso" id="pq-premium">
+                        <label for="pq-premium">Premium</label>
+                    </div>
                 </div>
-                <div class="radio-set">
-                    <input type="radio" name="curso" id="pq-plus">
-                    <label for="pq-plus">Plus</label>
-                </div>
-                <div class="radio-set">
-                    <input type="radio" name="curso" id="pq-premium">
-                    <label for="pq-premium">Premium</label>
+                <div class="radio-container">
+                    <p class="txt-bold">Medio de pago</p>
+                    <div class="radio-set">
+                        <input type="radio" name="mpago" id="mp-deb">
+                        <label for="mp-deb">Tarjeta de débito</label>
+                        <div id="debit-card-inputs">
+                            <input type="text" class="input-style-1" placeholder="Nombre del titular" name="debit-card-titular" id="debit-card-titular">
+                            <input type="text" class="input-style-1" pattern="[0-9-]{16,19}" placeholder="XXXX-XXXX-XXXX-XXXX" name="debit-card-number" id="debit-card-number">
+                            <input type="text" class="input-style-1" pattern="[0-9]{3}" placeholder="Codigo de seguridad (3 dig)" name="debit-card-cvv" id="debit-card-cvv">
+                            <input type="month" class="input-style-1" name="debit-card-vto" id="debit-card-vto">
+                        </div>
+                    </div>
+                    <div class="radio-set">
+                        <input type="radio" name="mpago" id="mp-transf">
+                        <label for="mp-transf">Transferencia</label>
+                        <div id="transfer-inputs">
+                            <input type="text" class="input-style-1" placeholder="CBU o Alias" name="user-transf-account" id="user-transf-account">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button class="btn-style1">Aceptar</button>
+            <button class="btn-style1" id="btn-ok-signup">Aceptar</button>
         </form>
 
     </main>
