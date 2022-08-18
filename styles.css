@@ -934,7 +934,7 @@ textarea::placeholder{
     background-color: var(--color1);
     border-radius: 15px;
     box-shadow: 1px 1px 1px 1px var(--color0);
-    padding: 20px 2.5%;
+    padding: 20px 25px;
     align-self: start;
 }
 
