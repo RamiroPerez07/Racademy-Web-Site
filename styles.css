@@ -1052,9 +1052,6 @@ textarea::placeholder{
         box-shadow: 0px 0px 3px 1px var(--color0);
     }
 
-    .gallery-photo:hover{
-        background-position: center center;
-    }
 
 
     .gallery-photo:nth-child(1){
