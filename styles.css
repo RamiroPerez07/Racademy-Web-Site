@@ -1206,21 +1206,23 @@ textarea::placeholder{
     }
 
     .main-header-nav ul{
-        padding: 45px 45px;
+        padding: 25px 45px;
         position: fixed;
-        top:0;
+        top:90px;
         left: -100%;
         z-index: 2;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
         width: 45%;
-        height: 100%;
+        height: calc(100% - 90px);
         background-color: var(--color1);
         opacity: 0.96;
         transition: all 0.5s;
     }
+
     
     #check:checked + .nav-links-container{
         left:0;
