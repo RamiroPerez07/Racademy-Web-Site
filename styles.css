@@ -195,7 +195,6 @@ a{
     width: 100%;
     height: auto;
     display: flex;
-    gap:20px;
     justify-content: space-around;
     align-items: center;
     box-shadow: 0px 0px 3px 1px var(--color0);
@@ -215,6 +214,14 @@ a{
     background-position: center;
 }
 
+.main-header-nav{
+    height: 90px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .burguer-main-header-check,
 .bars-label{
     display: none;
@@ -222,13 +229,14 @@ a{
 
 
 .nav-links-container{
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:20px;
 }
 
 .nav-links{
+    margin: 0 10px;
     list-style: none;
 }
 
@@ -240,9 +248,11 @@ a{
 }
 
 .nav-links a:hover{
-    color:var(--color3);
+    color: var(--color5);
     transition: all 0.5s;
 }
+
+
 
 .nav-links .menu-link-btn{
     border-radius: 10px;
@@ -259,12 +269,9 @@ a{
 /* HERO */
 
 .hero{
-    padding-left: 30px;
-    padding-right: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:50px;
     background-image: url("./img/hero-ph.png");
     background-position: center;
     background-size: cover;
@@ -272,12 +279,13 @@ a{
 }
 
 .hero-welcome-container{
+    margin: 25px;
     max-width: 600px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
     align-items: center;
-    justify-content: center;
-    gap:20px;
+    justify-items: center;
     padding: 20px;
     background-color: var(--color4);
     filter: blur(2);
@@ -299,13 +307,13 @@ a{
 }
 
 .btn-container-hero{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
-    align-items: center;
 }
 
 .hero-photo{
+    margin: 25px;
     width: 250px;
     height: 250px;
     background-image: url("./img/hero-ph-2.png");
@@ -322,21 +330,21 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:50px;
 }
 
-.opinions div h2{
+.opinions h2{
     font-size: var(--fs-large0);
+    margin-bottom: 70px;
 }
 
 .cards-opinion-container{
     height: auto;
     width: 90%;
-    margin:0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     gap: 30px;
+    margin-bottom: 20px;
 }
 
 .card-opinion{
@@ -357,12 +365,11 @@ a{
     border-radius: 10px;
     box-shadow: 1px 1px 2px 1px var(--color0);
     padding: 35px 10px 20px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     align-items: center;
     gap: 10px;
-    
 }
 
 .img-opinion{
@@ -406,7 +413,7 @@ a{
 .text-opinion-container{
     overflow: hidden;
     width:100%;
-    height: 150px;
+    height: 155px;
 }
 
 .text-opinion-container p{
@@ -422,12 +429,14 @@ a{
 
 .card-opinion-text a{
     font-size: var(--fs-small0);
-    align-self: flex-end;
+    justify-self: end;
     color: var(--color3);
     font-weight: var(--fw-light1);
 }
 
-
+#btn-more-opinions{
+    align-self: end;
+}
 
 
 
@@ -440,7 +449,6 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
 }
 
 .about-me div h2{
@@ -451,17 +459,18 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:15px;
     width:100%;
+    margin-bottom: 30px;
 }
 
 #presentation-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     align-items: center;
     gap:25px;
     width: 50%;
+    margin: 0 10px;
 }
 
 #img-presentation{
@@ -473,6 +482,7 @@ a{
     background-position: center;
     box-shadow: 0px 0px 3px 1px var(--color0);
     filter: brightness(1.05);
+    margin: 25px 10px;
 }
 
 #presentation h3{
@@ -502,13 +512,14 @@ a{
 #musical-trajectory{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap:15px;
     width: 100%;
 }
 
 #musical-trajectory p{
+    margin-top: 25px;
+    margin-bottom: 25px;    
     text-align: center;
     font-size: var(--fs-medium0);
 }
@@ -516,13 +527,12 @@ a{
 #gallery1{
     width: 80%;
     height: auto;
-    margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 3px 1px var(--color0);
+    box-shadow: 0px 0px 2px 1px var(--color0);
 }
 
 .gallery-photo{
@@ -538,7 +548,6 @@ a{
 
 .gallery-photo:hover{
     flex:2;
-    background-position: 50% 25%;
 }
 
 .gallery-photo:nth-child(1){
@@ -584,20 +593,10 @@ a{
     width:100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 15px 0px;
     justify-items: center;
 }
 
-.super-course-card{
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .course-card{
     width: min(95% , 275px);
@@ -606,20 +605,53 @@ a{
     background: linear-gradient(45grad, var(--color3),var(--color2));
     border-radius: 10px;
     padding: 15px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
-    justify-content: space-between;
+    justify-items: center;
     gap: 10px;
     box-shadow: 1px 1px 3px 1px var(--color0);
 }
+
+#classic-card{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#btn-register-classic{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#plus-card{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#btn-register-plus{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#premium-card{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+#btn-register-premium{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
 
 .card-list{
     width: 90%;
     height: auto;
     list-style: none;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: start;
     gap: 15px;
 }
 
@@ -669,6 +701,8 @@ a{
     width: 90%;
     height: auto;
     display: grid;
+    justify-items: center;
+    align-items: center;
     grid-template-columns: 1fr;
     gap: 10px;
 }
@@ -723,7 +757,6 @@ textarea::placeholder{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    justify-self: center;
 }
 
 #contact-gallery{
@@ -765,16 +798,30 @@ textarea::placeholder{
 /*#################################### */
 
 #main-footer{
-    height: 100px;
+    height: 150px;
     width: 100%;
     background: linear-gradient(to right, var(--color3),var(--color2));
     display: grid;
     grid-template-columns: 1fr;
-    align-content: center;
+    align-items: center;
+    justify-items: center;
     gap: 10px;
-    padding: 10px;
+    padding: 20px 10px;
 }
 
+
+
+.social-links-container{
+    max-width: 100px;
+    height: 25px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+#main-footer a,
 #main-footer p{
     color: var(--color1);
     font-size: var(--fs-small2);
@@ -782,7 +829,29 @@ textarea::placeholder{
     text-align: center;
 }
 
+#main-footer a:hover{
+    transition: all 0.5s;
+    color: var(--color5);
+    animation: pulso infinite 2s ease;
+}
 
+@keyframes pulso {
+    0%{
+        color: var(--color1);
+    }
+
+    50%{
+        color: var(--color5);
+    }
+
+    100%{
+        color: var(--color1);
+    }
+}
+
+.social-links-container a i{
+    font-size: var(--fs-medium1);
+}
 
 /*#################################### */
 
@@ -1011,6 +1080,39 @@ textarea::placeholder{
     #course-cards-container{
         grid-template-columns: 1fr;
     }
+
+    #classic-card{
+        margin-top: 30px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    #btn-register-classic{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    #plus-card{
+        margin-top: 30px;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    #btn-register-plus{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    
+    #premium-card{
+        margin-top: 30px;
+        grid-column: 1 / 2;;
+        grid-row: 5 / 6;
+    }
+    
+    #btn-register-premium{
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
 }
 
 
@@ -1078,6 +1180,13 @@ textarea::placeholder{
         padding-left: 30px;
     }
 
+    .hero-photo,
+    .hero-welcome-container{
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .cards-opinion-container{
         grid-template-columns: 1fr;
     }
@@ -1125,10 +1234,28 @@ textarea::placeholder{
         padding-left: 20px;
     }
 
-    .statistics-container{
+    .hero-photo{
+        width: 100%;
+    }
+
+    .btn-container-hero{
         grid-template-columns: 1fr;
     }
 
+    .statistics-container{
+        grid-template-columns: 1fr;
+    }
+    .card-opinion{
+        width: 90%;
+    }
+    
+    .card-opinion-text{
+        width: 90%;
+    }
 
+
+    .btn-container{
+        width: 100%;
+    }
 
 }
