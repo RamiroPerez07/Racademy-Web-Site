@@ -434,9 +434,11 @@ a{
     font-weight: var(--fw-light1);
 }
 
-#btn-more-opinions{
+
+/*sugerencia de comunidad dejarlo al centro*/
+/* #btn-more-opinions{
     align-self: end;
-}
+} */
 
 
 
