@@ -33,11 +33,19 @@
 }
 
 html{
+    width: 100%;
+    height: auto;
     scroll-behavior: smooth;
     scroll-padding: 90px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: start;
 }
 
 body{
+    width: 100%;
+    max-width: 1980px;
     display: flex;
     flex-direction: column;
     justify-content: start;
